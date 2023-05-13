@@ -3,7 +3,6 @@ import { TextInput, Button } from "react-native-paper";
 import { useState } from "react";
 import { styles } from "../assets/styles/styles";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { responsiveFontSizes } from "@mui/material";
 
 export default function LoginScreen({navigation}) {
     const [formData,setFormData] = useState(defaultFormValues());
