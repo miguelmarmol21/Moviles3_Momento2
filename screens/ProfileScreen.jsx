@@ -33,7 +33,7 @@ export default function ProfileScreen({navigation}){
             values.forEach(value =>{
                 usr = value.name
             })
-            setMessageProfile(`Bienvendo ${usr}`)
+            setMessageProfile(`Bienvenido ${usr}`)
         })
     }
 

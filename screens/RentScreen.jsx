@@ -116,15 +116,16 @@ export default function RentScreen({ navigation }) {
   }
 
   function pushArrayCar() {
-    const valuesCars = getValuesRent();
+    const valuesCars = getValuesCars();
     valuesCars
       .then((values) => {
         console.log(values);
         values.forEach(value =>{
-          if(value === plateNumber){
-            values.state == false
+          if(value.plateNumber === plateNumber){
+            value.state = false
           }
         })
+        console.log(values);
         AsyncStorage.setItem("keyCar", JSON.stringify(values));
       })
   }

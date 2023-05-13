@@ -54,6 +54,7 @@ export default function CarScreen({ navigation }) {
     const searchValuesCar = getValuesRent();
     searchValuesCar
       .then((values) => {
+        console.log(values);
         let loadCar = values.find((value) => value.plateNumber === plateNumber);
         if (plateNumber === "") {
           setErrorMess("Ingrese todos los valores");
